@@ -16,4 +16,14 @@ print(tensor.shape)
 print(tensor.dtype)
 print(tensor.device)
 
-tensor = tensor.reshape(3,1) #차원 변환환
+tensor = tensor.reshape(2, 1) #차원 변환 (같은 크기 여야 함)
+
+tensor = tensor.rand((3,3), dtype=torch.float) #data type 지정
+
+import numpy as np
+
+array = np.array([1,2,3], dtype=np.unit8)
+print(torch.tensor(array)) #numpy array를 tensor로 변환
+print(torch.Tensor(array))
+print(torch.from_numpy(array)) 
+
