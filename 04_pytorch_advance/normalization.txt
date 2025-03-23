@@ -1,0 +1,6 @@
+Noramlization : 정규화, 평균, 분산으로 데이터를 일정한 범위로 조정
+- Batch Normalization
+- Layer Noramlization
+- Instance Noramlization
+- Group Nomralization
+

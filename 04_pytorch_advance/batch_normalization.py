@@ -9,4 +9,11 @@ x = torch.FloatTensor(
     ]
 )
 
-print(nn.BatchNorm1d(3)(x))
+print(nn.BatchNorm1d(3)(x)) #3은 feature 수 
+# 1d는 2D/3D 입력 데이터에 뱇치 정규화 수행
+
+#Layer Normalization
+## torch.nn.LayerNorm(normalized_shape)
+
+#Instance Normalization
+## torch.nn.InstanceNorm1d(num_features)  
